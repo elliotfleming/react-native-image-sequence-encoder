@@ -4,9 +4,6 @@
   "description": "On-device PNG-sequence → MP4 encoder for React-Native / Expo (no FFmpeg).",
   "main": "build/index.js",
   "types": "build/types/index.d.ts",
-  "expo": {
-    "plugins": "./plugin/withImageSeqEncoder"
-  },
   "files": [
     "build",
     "ios",
