@@ -13,15 +13,13 @@
  * add future build-time tweaks (e.g. minSdk upgrades) without breaking apps.
  */
 
-import { ConfigPlugin, createRunOncePlugin } from '@expo/config-plugins';
+// plugin/withImageSeqEncoder.js
+const { createRunOncePlugin } = require('@expo/config-plugins');
 
-const pkg = require('../package.json');
+const withImageSeqEncoder = (config) => config; // nothing to patch (yet)
 
-const withImageSeqEncoder: ConfigPlugin = (config) => {
-  // No modifications needed today – autolinking handles the native code.
-  // Leaving the function here in case we need to patch Podfile.gradle in v2.
-  return config;
-};
-
-// Ensures the plugin runs at most once, even if the user lists it twice.
-export default createRunOncePlugin(withImageSeqEncoder, pkg.name, pkg.version);
+module.exports = createRunOncePlugin(
+  withImageSeqEncoder,
+  'react-native-image-sequence-encoder',
+  require('../package.json').version,
+);
