@@ -1,0 +1,53 @@
+{
+  "name": "react-native-image-sequence-encoder",
+  "version": "0.1.0",
+  "description": "On-device PNG-sequence → MP4 encoder for React-Native / Expo (no FFmpeg).",
+  "main": "build/index.js",
+  "types": "build/types/index.d.ts",
+  "files": [
+    "build",
+    "ios",
+    "android",
+    "plugin"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elliotfleming/react-native-image-sequence-encoder.git"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "video",
+    "encoder",
+    "image-sequence",
+    "mp4"
+  ],
+  "author": "Elliot Fleming",
+  "email": "elliotfleming@gmail.com",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  },
+  "bugs": {
+    "url": "https://github.com/elliotfleming/react-native-image-sequence-encoder/issues"
+  },
+  "homepage": "https://github.com/elliotfleming/react-native-image-sequence-encoder#readme",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@expo/config-plugins": "^10.1.0",
+    "@types/react": "^19.1.8",
+    "@types/react-native": "^0.72.8",
+    "prettier": "^3.6.2",
+    "react": "^19.1.0",
+    "react-native": "^0.80.1",
+    "typescript": "^5.8.3"
+  }
+}

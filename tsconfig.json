@@ -1,0 +1,61 @@
+{
+  "compilerOptions": {
+    // basic options
+    "target": "esnext", // RN Hermes supports ESNext syntax
+    "module": "commonjs", // Node-style modules for Metro / Jest
+    "lib": ["esnext"], // use latest ES features
+
+    // React Native specific
+    "jsx": "react-native", // React Native JSX transform
+
+    // module resolution
+    "moduleResolution": "node", // Node-style module resolution
+    "baseUrl": ".", // base directory for non-relative module names
+    "paths": {
+      "*": ["node_modules/*"]
+    },
+    "resolveJsonModule": true, // allows importing JSON files
+    "typeRoots": ["./node_modules/@types", "./@types"], // custom types directory
+    "types": ["react", "react-native"], // ambient types available in library code
+
+    // directory structure
+    "rootDir": ".", // source of truth
+    "outDir": "build", // emitted JS + d.ts go here (npm publish)
+
+    // output control
+    "declaration": true, // generate .d.ts files alongside JS
+    "declarationDir": "build/types", // keep types beside JS output
+    "emitDeclarationOnly": false, // we want JS + d.ts for consumers
+    "sourceMap": true, // generate source maps for debugging
+
+    // performance and compatibility
+    "incremental": true, // speeds up builds by caching previous results
+    "isolatedModules": true, // ensures every file can be transpiled independently
+    "skipLibCheck": true, // RN ships its own typedefs – speeds up build
+    "skipDefaultLibCheck": true, // skip checking default lib.d.ts
+
+    // strict type checking options
+    "strict": true, // full strict mode
+    "alwaysStrict": true, // ensure files are always in strict mode
+    "strictNullChecks": true, // catch null/undefined issues
+    "strictFunctionTypes": true, // check function parameter bivariance
+    "noImplicitAny": true, // catch implicit 'any' types
+    "noImplicitReturns": true, // catch missing return statements
+    "noFallthroughCasesInSwitch": true, // catch fallthrough in switch cases
+    "noUncheckedIndexedAccess": true, // catch missing array indices
+    "strictPropertyInitialization": false, // disable strict property initialization
+
+    // output control
+    "noEmitHelpers": true, // use native helpers instead of emitting them
+    "importHelpers": false, // use tslib for helper functions
+    "experimentalDecorators": true, // support for decorators
+
+    // module interoperability
+    "esModuleInterop": true, // allows default imports from CommonJS modules
+    "allowSyntheticDefaultImports": true // allow default imports from modules with no default export
+  },
+
+  // File globs
+  "include": ["src", "plugin"],
+  "exclude": ["build", "node_modules", "example"]
+}

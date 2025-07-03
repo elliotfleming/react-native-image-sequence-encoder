@@ -1,0 +1,42 @@
+###############################################################################
+#  Ignore source & dev-only assets – publish only transpiled JS + native code #
+###############################################################################
+
+# Source TypeScript / JSX
+src/
+
+# Local example & playground apps
+example/
+
+# Tests, coverage, benchmarks
+test/
+tests/
+__tests__/
+coverage/
+.nyc_output/
+benchmark/
+
+# Build tooling & editor configs
+.eslintrc*
+.prettierrc*
+babel.config.js
+jest.config.js
+metro.config.js
+tsconfig*.json
+*.tsbuildinfo
+.vscode/
+.idea/
+
+# Expo local data
+.expo/
+.expo-shared/
+
+# Misc generated or temp files
+*.log
+*.log.*
+*.patch
+*.orig
+.DS_Store
+*.swp
+*.swo
+.temp/

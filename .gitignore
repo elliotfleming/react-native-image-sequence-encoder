@@ -1,0 +1,88 @@
+###############################################################################
+#  General                                                                    #
+###############################################################################
+# Dependency directories
+node_modules/
+# Build / transpiled output
+build/
+lib/
+dist/
+# Monorepo temp
+.temp/
+
+# Logs & debugging
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+*.log.*
+
+# Environment files
+.env
+.env.*           # e.g. .env.local, .env.production
+
+# Editor & OS cruft
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*.orig
+
+###############################################################################
+#  TypeScript / Lint / Testing                                                #
+###############################################################################
+# ts-node cache
+.ts-node/
+# ESLint cache
+.eslintcache
+# Jest coverage / snapshots
+coverage/
+coverage-final.json
+.nyc_output/
+jest-results.json
+# Prettier cache
+.prettiercache
+
+###############################################################################
+#  React-Native / Expo                                                        #
+###############################################################################
+# Metro & Haul
+.haul
+.expo/
+.expo-shared/
+
+###############################################################################
+#  iOS (Xcode)                                                                #
+###############################################################################
+ios/Pods/
+ios/build/
+ios/*.xcodeproj/xcuserdata/
+ios/*.xcworkspace/xcuserdata/
+# DerivedData lives outside repo but catch accidental copies
+DerivedData/
+# SwiftPM artefacts
+ios/.swiftpm/
+# Carthage (if someone adds it locally)
+Carthage/
+
+###############################################################################
+#  Android (Gradle)                                                           #
+###############################################################################
+android/.gradle/
+android/.idea/
+android/.cxx/
+android/build/
+android/app/build/
+android/local.properties
+*.iml
+
+###############################################################################
+#  Miscellaneous                                                              #
+###############################################################################
+# VS Code launch configs, etc.
+.vscode/
+# macOS Finder attributes
+*.DS_Store
+# patch files from `git apply`
+*.patch
