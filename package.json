@@ -8,7 +8,8 @@
     "build",
     "ios",
     "android",
-    "plugin"
+    "plugin",
+    "app.plugin.js"
   ],
   "scripts": {
     "build": "tsc",
