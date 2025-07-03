@@ -1,4 +1,4 @@
-// plugin/withImageSeqEncoder.ts
+// plugin/withImageSeqEncoder.js
 /**
  * Expo config-plugin for **react-native-image-sequence-encoder**
  * --------------------------------------------------------------
@@ -13,7 +13,6 @@
  * add future build-time tweaks (e.g. minSdk upgrades) without breaking apps.
  */
 
-// plugin/withImageSeqEncoder.js
 const { createRunOncePlugin } = require('@expo/config-plugins');
 
 const withImageSeqEncoder = (config) => config; // nothing to patch (yet)

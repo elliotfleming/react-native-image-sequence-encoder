@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "types": "build/types/index.d.ts",
   "expo": {
-    "plugin": "plugin/withImageSeqEncoder"
+    "plugin": "./plugin/withImageSeqEncoder"
   },
   "files": [
     "build",
