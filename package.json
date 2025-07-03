@@ -1,6 +1,6 @@
 {
   "name": "react-native-image-sequence-encoder",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "On-device PNG-sequence → MP4 encoder for React-Native / Expo (no FFmpeg).",
   "main": "build/index.js",
   "types": "build/types/index.d.ts",
